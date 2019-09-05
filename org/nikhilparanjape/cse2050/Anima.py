@@ -2,6 +2,7 @@ import random
 import sys
 import os
 
+
 class Animal:
     __name = ""
     __height = 0
@@ -19,10 +20,11 @@ class Animal:
 
     def get_name(self, ):
         return self.__name
+
     def get_type(self):
         print(Animal)
 
-    def toString(self):
+    def to_string(self):
         return "My name is {}, I am {} lbs, and {} inches tall. I can {} ".format(self.__name,
                                                                                   self.__weight,
                                                                                   self.__height,
