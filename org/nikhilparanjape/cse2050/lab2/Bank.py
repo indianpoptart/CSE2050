@@ -50,6 +50,7 @@ class CreditCard:
             print("Your purchase is will go over the limit, or your account is already over the limit")
             return False
 
+
 class PredatoryCreditCard(CreditCard):
     _apr = 0
 
@@ -63,6 +64,7 @@ class PredatoryCreditCard(CreditCard):
     def charge(self, price):
         if CreditCard.charge(price):
             print("Everything all good")
+
 
 mycard = CreditCard(392173311124934, 0, "Citizens Bank", "Nikhil Paranjape", 20000)
 
