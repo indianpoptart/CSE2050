@@ -4,8 +4,9 @@
 
 import time
 
+
 class Calculator:
-    print("Test")
+    print("")
 
 
 def print_menu():  # Calc menu

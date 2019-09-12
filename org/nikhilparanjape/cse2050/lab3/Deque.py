@@ -2,23 +2,24 @@ class ListDeque:
     def __init__(self):
         self._L = []
 
-    def addFirst(self, item):
+    def addfirst(self, item):
         self._L.insert(0, item)
 
-    def addLast(self, item):
+    def addlast(self, item):
         self._L.append(item)
 
-    def removeFirst(self):
+    def removefirst(self):
         return self._L.pop(0)
 
-    def removeLast(self):
+    def removelast(self):
         return self._L.pop()
 
     def __len__(self):
         return len(self._L)
 
+
 dq = ListDeque()
-dq.addFirst(5)
-dq.addLast(100)
+dq.addfirst(5)
+dq.addlast(100)
 print(len(dq))
-dq.addFirst(1)
+dq.addfirst(1)

@@ -1,8 +1,3 @@
-import random
-import sys
-import os
-
-
 class Animal:
     __name = ""
     __height = 0
@@ -16,13 +11,16 @@ class Animal:
         self.__sound = sound
 
     def set_name(self, name):
-        self.name = name
+        pass
 
-    def get_name(self, ):
+    def get_name(self):
         return self.__name
 
     def get_type(self):
         print(Animal)
+
+    def get_sound(self):
+        return self.__sound
 
     def to_string(self):
         return "My name is {}, I am {} lbs, and {} inches tall. I can {} ".format(self.__name,
@@ -32,8 +30,6 @@ class Animal:
 
 
 cat = Animal("Kevin", 33, 10, "meow")
-
-print(cat.toString())
 
 
 class Dog(Animal):
@@ -46,7 +42,13 @@ class Dog(Animal):
     def set_owner(self, owner):
         self.__owner = owner
 
+    def get_owner(self):
+        return self.__owner
 
-henry = Dog("henry", 56, 65, "bark", "Nikhil")
 
-print(henry.toString())
+henry = Dog("Henry", 56, 65, "bark", "Nikhil")
+
+print("My name is {}. I can {}! My owner's name is {}".format(henry.get_name(),
+                                                                henry.get_sound(),
+                                                                henry.get_owner()))
+
