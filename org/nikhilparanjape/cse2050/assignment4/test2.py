@@ -57,5 +57,3 @@ myMap.add(6, "N")
 
 for i in range(len(myMap)):
     print(myMap._entryList[i].value)
-
-
