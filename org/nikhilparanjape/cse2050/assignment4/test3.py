@@ -57,8 +57,6 @@ class Map:
 
 if __name__ == '__main__':
     print("Begin Assignment 4: Maps")
-
-    # Question 1a
     print(34 * "-", "\n1a. Add function with key-value pairs \n", 33 * "-")
     myMap = Map()
     myMap.add(1, "A")
@@ -67,18 +65,15 @@ if __name__ == '__main__':
     myMap.add(4, "B")
     myMap.add(5, "A")
     myMap.add(6, "N")
-
+    
     myMap.printmap()
 
-    # Question 1b
     print(30 * "-", "\n1b. Search for value of key 3\n", 29 * "-")
     print('The Value for element 3 is: \n', myMap.valueOf(3))
 
-    # Question 1c
     print(34 * "-", "\n1c. Remove element '2' Printed map:\n", 33 * "-")
     myMap.remove(2)
     myMap.printmap()
 
-    #Question 1d
     print(34 * "-", "\n1d. Printing length of list of pairs \n", 33 * "-")
     print("The length of the list is:\n", len(myMap))
