@@ -46,7 +46,20 @@ class HashMap:
                 return True
 
     def print(self):
-        print('\n----Hash Maps----')
+        print(30 * "-", '\nHash Maps', 29 * "-")
         for item in self.map:
             if item is not None:
                 print(str(item), end=" ")
+
+if __name__ == '__main__':
+    hm = HashMap()
+    hm.add(0, "A")
+    hm.add(1, "B")
+    hm.add(2, "C")
+    hm.add(3, "D")
+    hm.add(4, "E")
+    hm.add(5, "F")
+    hm.add(6, "G")
+    hm.print()
+    hm.add(7, "H")
+    hm.print()
