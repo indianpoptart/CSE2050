@@ -51,13 +51,24 @@ class HashMap:
             if item is not None:
                 print(str(item), end=" ")
 
-    def ratelist(self, weight):
-        pass
+    def keys(self):
+        temp_array = []
+        for i in range(0, len(self.map)):
+            if self.map[i]:
+                temp_array.append(self.map[i][0])
+        return temp_array
 
 
 if __name__ == '__main__':
     credentials = HashMap()
-    credentials.add("nikhilparanjape", "password")
-    credentials.add("johndoe", "admin")
-    for key, value in credentials.items():
-        credentials.get_hash(key)
+    credentials.add("password", "nikhilparanjape")
+    credentials.add("admin", "johndoe")
+    credentials.add("3ds87378fhH#&*hf783", "jeffbezos")
+    credentials.add("83whf98h(#&*Hf78hjf73", "tonystark")
+    credentials.add("thinkdifferent", "stevejobs")
+    credentials.add("348h9zdontbeev89730wav87nwa9rv8n7a98wvril3uihf893", "sundarpichai")
+    for key in credentials.keys():
+        if credentials.get_hash(key) < 500:
+            print(credentials.get(key))
+
+
