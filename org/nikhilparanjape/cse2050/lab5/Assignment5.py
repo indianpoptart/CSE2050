@@ -46,7 +46,7 @@ class HashMap:
                 return True
 
     def print(self):
-        print(30 * "-", '\nHash Maps', 29 * "-")
+        print(30 * "-", '\nUserPassMap', 29 * "-")
         for item in self.map:
             if item is not None:
                 print(str(item), end=" ")
@@ -56,8 +56,8 @@ class HashMap:
 
 
 if __name__ == '__main__':
-    ratelist = HashMap()
-    hm = HashMap()
-    hm.add("Apple", 3.5)
-
-    hm.print()
+    credentials = HashMap()
+    credentials.add("nikhilparanjape", "password")
+    credentials.add("johndoe", "admin")
+    for key, value in credentials.items():
+        credentials.get_hash(key)
